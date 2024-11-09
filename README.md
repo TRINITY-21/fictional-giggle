@@ -67,7 +67,7 @@ npm -v
 ### Steps
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/task-tracker.git
+   git clone https://github.com/TRINITY-21/fictional-giggle.git
    cd task-tracker
    ```
 
