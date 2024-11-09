@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Task Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Task Tracker application built with ReactJS, using Tailwind CSS for styling. It allows users to add, delete, and track tasks. The project follows a component-based architecture, with Redux state management.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Folder Structure](#folder-structure)
+- [Installation](#installation)
+- [Running the App](#running-the-app)
+- [Usage](#usage)
+- [Built With](#built-with)
 
-In the project directory, you can run:
+## Features
+- Add new tasks with custom details.
+- Mark tasks as completed or pending.
+- Remove tasks from the list.
+- Toggle between dark and light themes.
 
-### `npm start`
+## Folder Structure
+The main folders and files are structured as follows:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```plaintext
+task-tracker/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   └── manifest.json
+├── src/
+│   ├── assets/
+│   │   ├── dark.png
+│   │   ├── light.png
+│   │   └── header.json
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── Button.jsx
+│   │   │   ├── DarkButton.jsx
+│   │   │   ├── LightButton.jsx
+│   │   ├── TaskForm.jsx
+│   │   ├── TaskItem.jsx
+│   │   └── TaskList.jsx
+│   ├── store/
+│   │   ├── index.js
+│   │   └── reducer.js
+│   ├── App.css
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+│   └── reportWebVitals.js
+├── .gitignore
+├── package.json
+├── README.md
+└── tailwind.config.js
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
+Ensure you have Node.js and npm installed on your machine. You can check the installation by running:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+node -v
+npm -v
+```
 
-### `npm run build`
+### Steps
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/task-tracker.git
+   cd task-tracker
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Configure Tailwind CSS**
+   Make sure `tailwind.config.js` is configured as required for your project setup. The setup should be compatible with React by following Tailwind's React setup guide.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Running the App
 
-### `npm run eject`
+To start the development server, run:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will start the app locally, and you can view it in the browser at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Additional Scripts
+- **Build the app**: `npm run build` - Compiles the app for production in the `build` folder.
+- **Run tests**: `npm test` - Launches the test runner.
+- **Linting and formatting**: (Optional based on ESLint and Prettier setup)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
+1. **Add Task**: Enter task details in the provided form and click the 'Add Task' button.
+2. **Delete Task**: Click the delete icon next to each task to remove it.
+3. **Update Task**: Click the Update icon next to each task to update it.
+4. **Toggle Completed and Pending Task**: Click the toggle icon next to each task to complete it.
 
-## Learn More
+3. **Toggle Dark Mode**: Click on the dark/light button in the UI to switch between themes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Built With
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
+- [Redux](https://redux.js.org/) - A predictable state container for JavaScript apps.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
