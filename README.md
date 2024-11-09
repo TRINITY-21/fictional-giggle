@@ -68,7 +68,7 @@ npm -v
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/TRINITY-21/fictional-giggle.git
-   cd task-tracker
+   cd fictional-giggle
    ```
 
 2. **Install Dependencies**
